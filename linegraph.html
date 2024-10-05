@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulu Style Line Graphs</title>
+    <link rel="stylesheet" href="linegraph.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Line Graphs for X and Y</h1>
+        <div class="input-container">
+            <input type="number" id="inputX" placeholder="Enter value for X" required>
+            <input type="number" id="inputY" placeholder="Enter value for Y" required>
+            <button id="addButton">Generate</button>
+        </div>
+        <canvas id="lineChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
